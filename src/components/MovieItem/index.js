@@ -13,17 +13,17 @@ const MovieItem = props => {
   return (
     <div>
       <Popup
-        model
+        modal
         trigger={
           <img src={thumbnailUrl} alt="thumbnail" className="thumbnail" />
         }
         className="popup-content"
       >
         {close => (
-          <div className="model-container">
+          <div className="modal-container">
             <button
-              type="button"
               className="close-button"
+              type="button"
               data-testid="closeButton"
               onClick={() => close()}
             >
